@@ -13,5 +13,5 @@ and how to compile and execute programs in Unix/Linux environment.
 
 ## Run your first Makefile 
 ```
-
+make -C FIRST_MAKE run 
 ```
