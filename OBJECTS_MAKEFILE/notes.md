@@ -21,7 +21,7 @@ An object file is a file that contains machine code or bytecode, as well as othe
    * %.c : pattern to match in $(src)
    * %.o : pattern expected (pattern to replace)
    
-*NB:$(var :suffix=replacement)=$(patsubst %suffix,%replacement,$(var))*\
+*NB: $(var :suffix=replacement)=$(patsubst %suffix,%replacement,$(var))*
 
 #### Code to create each object file per source file
 ```
