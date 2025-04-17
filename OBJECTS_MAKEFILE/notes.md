@@ -16,7 +16,7 @@ An object file is a file that contains machine code or bytecode, as well as othe
 - Speeds up build in large projects.
 ## Explanation of Make Terminologies
  - `%` represents the name of the file (the prefix) e.g *%.c*
- - $(patsubst %.c,%.o,$(src))
+ - `$(patsubst %.c,%.o,$(src))`
    * $(src) : list of c files 
    * %.c : pattern to match in $(src)
    * %.o : pattern expected (pattern to replace)
