@@ -1,6 +1,6 @@
 # UNDERSTANDING OBJECTS IN MAKEFILE
 
-`overview`
+*overview*
 > The purpose of this note is to be able to explain the role of objects in Makefile
 
 ## What is an Objects in Makefile ?
