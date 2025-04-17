@@ -17,14 +17,17 @@ An object file is a file that contains machine code or bytecode, as well as othe
 ## Explanation of Make Terminologies
  - `%` represents the name of the file (the prefix) e.g *%.c*
  - $(patsubst %.c,%.o,$(src))
-   - $(src) : list of c files 
-   - %.c : pattern to match in $(src)
-   - %.o : pattern expected (pattern to replace)
+   * $(src) : list of c files 
+   * %.c : pattern to match in $(src)
+   * %.o : pattern expected (pattern to replace)
    
-*NB:$(var :suffix=replacement)=$(patsubst %suffix,%replacement,$(var))*
- %.o : %.c
- 	gcc -c $^ -o $@
+*NB:$(var :suffix=replacement)=$(patsubst %suffix,%replacement,$(var))*\
 
+#### Code to create each object file per source file
+```
+%.o : %.c
+ 	gcc -c $^ -o $@
+```
 Creates an object for each c file present in the current directory.\
 This is essential to avoid a target for every object to be created from a c file. 	  
     
