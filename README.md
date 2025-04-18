@@ -8,8 +8,7 @@ Make takes the help of user define makefiles.
 
 ## Prerequisities 
 
-This tutorial expects good understanding of programming language such as C and C++. The reader is expected to have a good knowledge of linking, loading,concepts\
-and how to compile and execute programs in Unix/Linux environment.
+This tutorial assumes a good understanding of programming language such as C and C++. The reader is expected to be familiar with concepts like linking, loading, and how to compile and execute programs in Unix/Linux environment.
 
 ## Run your first Makefile 
 ```
