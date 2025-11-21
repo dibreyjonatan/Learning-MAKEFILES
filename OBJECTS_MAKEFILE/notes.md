@@ -15,13 +15,21 @@ An object file is a file that contains machine code or bytecode, as well as othe
 - Only compiled source files get recompiled.
 - Speeds up build in large projects.
 ## Explanation of Make Terminologies
- - `%` represents the name of the file (the prefix) e.g *%.c*
+ - `%` represents the name of the file (the prefix) e.g **%.c**
  - `$(patsubst %.c,%.o,$(src))`
    * $(src) : list of c files 
    * %.c : pattern to match in $(src)
    * %.o : pattern expected (pattern to replace)
    
-*NB: $(var :suffix=replacement)=$(patsubst %suffix,%replacement,$(var))*
+NB: $(var :suffix=replacement)=$(patsubst %suffix,%replacement,$(var))
+####  The CFLAG to create an object 
+ The compiler creates an object from a c file using the **-c** flag.
+
+**Option -c**  tells gcc compiler not to generate the final executable but to stop before the linking step.
+So, a .o file is not an executable file and contains usually contains links to other functions.
+##### How is the final executable created ? 
+To create the final executable, the compiler must link all the objects together
+> gcc -Wall -Werror obj1.o obj2.o -o exec 
 
 #### Code to create each object file per source file
 ```

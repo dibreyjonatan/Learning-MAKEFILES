@@ -14,3 +14,5 @@ This tutorial assumes a good understanding of programming languages such as C an
 ```
 make -C FIRST_MAKE run 
 ```
+### To write a Makefile 
+see readme file in OBJECTS_MAKEFILE/ directory
